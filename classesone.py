@@ -1,4 +1,4 @@
-from _typeshed import Self
+
 
 
 class restaurant():
@@ -17,6 +17,15 @@ class restaurant():
 
 
 grandhayat = restaurant("grand HAYAT", "Indian")
-grandhayat.describe_restaurant()
+tajhotel = restaurant("Taj mumbai", "south indian food")
+dabrihotel = restaurant("The Grand Dabri","Rajasthani Food")
+
 
 grandhayat.describe_restaurant()
+print("\n")
+tajhotel.describe_restaurant()
+print("\n")
+dabrihotel.describe_restaurant()
+
+
+
