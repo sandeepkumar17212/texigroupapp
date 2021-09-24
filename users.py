@@ -4,6 +4,7 @@ class user():
         self.lastname = lastname
         self.age = age
         self.phonenumer = phonenumber
+        self.login_attempts = 0
 
     def gretting(self):
         print("hello "+self.name+" "+self.lastname+ ". its very nice to see you")
@@ -15,14 +16,34 @@ class user():
         print("age: "+str(self.age))
         print("phone number: "+str(self.phonenumer))
 
+    def increment_login_attampts(self):
+        self.login_attempts = self.login_attempts+1
+
+    
+    def reset_login_attampts(self):
+        self.login_attempts = 0
 
 
-sandeep = user("sandeep","kumar",30,450343505)
 
-sandeep.gretting()
-sandeep.describeuser()
 
-user2 = user("Amit","kumar",20,234332)
 
-user2.gretting()
-user2.describeuser()
+user1 = user("Amit","kumar",20,234332)
+
+user1.gretting()
+user1.describeuser()
+
+
+user1.increment_login_attampts()
+user1.increment_login_attampts()
+user1.increment_login_attampts()
+
+print("\n")
+
+print("this user has tried to log in "+str(user1.login_attempts)+ " times.")
+
+user1.reset_login_attampts()
+
+print("\n")
+
+print("this user has tried to log in "+str(user1.login_attempts)+ " times.")
+

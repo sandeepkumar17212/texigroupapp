@@ -1,3 +1,6 @@
+
+
+
 class user():
     def __init__(self,firstname,lastname,phonenumber):
         self.name = firstname
@@ -39,6 +42,8 @@ newage = input("add the new age you wish to change to - - ")
 user1.updateage(int(newage))
 
 user1.printage()
+
+
 
 
 
