@@ -26,24 +26,30 @@ class user():
 
 
 
+## creating an instance of class user
 
 user1 = user("Amit","kumar",20,234332)
 
+
+## calling the methods of the class user as USER1
 user1.gretting()
 user1.describeuser()
 
 
+
+
+
 user1.increment_login_attampts()
 user1.increment_login_attampts()
 user1.increment_login_attampts()
 
 print("\n")
-
 print("this user has tried to log in "+str(user1.login_attempts)+ " times.")
+
+
 
 user1.reset_login_attampts()
 
 print("\n")
-
 print("this user has tried to log in "+str(user1.login_attempts)+ " times.")
 
