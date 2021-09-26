@@ -22,7 +22,17 @@ class restaurant():
         self.number_served = self.number_served+numbers
 
 
+class IceCreamStand(restaurant):
+    def __init__(self, restaurant_name, causine_type):
+        super().__init__(restaurant_name, causine_type)
+        self.flavors = ["vanilla","chocolate","dark choco","caramel"]
 
+
+    def displayflavors(self):
+        print("we are serving below flavors of icecream - ")
+        for i in self.flavors:
+            print(i)
+        
 
 
 
@@ -43,4 +53,6 @@ class restaurant():
 
 
 
+mynewrestaurent = IceCreamStand("kulfiwala","ice creams")
 
+mynewrestaurent.displayflavors()

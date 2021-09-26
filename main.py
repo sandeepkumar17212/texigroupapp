@@ -95,3 +95,29 @@ grandhayat.increment_number_served(5)
 
 print("At Grand Hayat, we have served "+ str(grandhayat.number_served) + "customers TODAY")
 
+
+
+########################################################
+############################################
+######################################
+
+
+mynewrestaurent = restaurent.IceCreamStand("kulfiwala","ice creams")
+
+mynewrestaurent.displayflavors()
+
+
+
+
+
+######################################################################################
+##############################################################################
+##################################################################
+###########################################################
+
+
+
+
+sandeep = users.Admin("sandeep","kumar",26,450343505)
+print(sandeep.privileges)
+sandeep.showprevileges()

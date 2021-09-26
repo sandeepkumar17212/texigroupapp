@@ -2,7 +2,7 @@
 print("from here")
 import users
 
-##import restaurent
+import restaurent
 
 print("check from here")
 
@@ -17,4 +17,4 @@ user1.describeuser()
 
 
 
-##print(restaurent.grandhayat.number_served)
+print(restaurent.grandhayat.number_served)
